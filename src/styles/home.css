@@ -1,0 +1,383 @@
+/* ---- Carrusel de noticias ---- */
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  background: var(--marino-profundo);
+}
+.carrusel__pista {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.carrusel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-height: clamp(26rem, 58vh, 38rem);
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem calc(var(--gutter) + 4rem) 4.5rem;
+  background:
+    linear-gradient(0deg, rgba(4, 9, 22, 0.95) 0%, rgba(11, 23, 48, 0.6) 45%, rgba(11, 23, 48, 0.3) 100%),
+    var(--slide-imagen, none) center / cover no-repeat,
+    radial-gradient(circle at 85% 20%, rgba(255, 90, 0, 0.35), transparent 45%),
+    linear-gradient(135deg, var(--marino-claro), var(--marino-profundo));
+}
+.carrusel__texto {
+  width: 100%;
+  max-width: var(--ancho);
+  margin-inline: auto;
+}
+.carrusel__etiqueta {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  padding: 0.25rem 0.85rem;
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--marino);
+  background: var(--lima);
+  border-radius: var(--radio-s);
+}
+.carrusel__texto h2 {
+  max-width: 34ch;
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  line-height: 1.18;
+  margin-bottom: 0.5em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+.carrusel__texto p {
+  max-width: 68ch;
+  font-size: clamp(1.15rem, 0.95rem + 0.7vw, 1.4rem);
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin: 0;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+.carrusel__flecha {
+  position: absolute;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-top: -1.7rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--blanco);
+  color: var(--marino);
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.carrusel__flecha:hover {
+  background: var(--lima);
+  transform: scale(1.05);
+}
+.carrusel__flecha--izq {
+  left: 1.25rem;
+}
+.carrusel__flecha--der {
+  right: 1.25rem;
+}
+.carrusel__puntos {
+  position: absolute;
+  inset: auto 0 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.carrusel__puntos button {
+  position: relative;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.carrusel__puntos button::after {
+  content: '';
+  position: absolute;
+  inset: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: inset 0.2s, background 0.2s;
+}
+.carrusel__puntos button.activo::after {
+  inset: 0.35rem;
+  background: var(--lima);
+}
+
+@media (max-width: 40rem) {
+  .carrusel__slide {
+    padding-inline: 1.25rem;
+    padding-bottom: 4.5rem;
+    min-height: 28rem;
+  }
+  .carrusel__flecha {
+    top: 1.5rem;
+    margin-top: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .carrusel__texto h2 {
+    margin-top: 2.5rem;
+  }
+}
+
+/* ---- Hero ---- */
+.hero__interior {
+  display: grid;
+  gap: 2.5rem;
+  align-items: end;
+}
+.hero h1 {
+  max-width: 20ch;
+  font-size: clamp(2.1rem, 1.2rem + 3.6vw, 3.75rem);
+}
+.hero__texto {
+  font-size: var(--t-lg);
+  color: var(--niebla);
+}
+.hero__botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+.cifras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 4px solid var(--lima);
+}
+.cifras div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.cifras dd {
+  margin: 0;
+  font-size: var(--t-2xl);
+  font-weight: 700;
+  line-height: 1;
+}
+.cifras dt {
+  color: var(--niebla);
+  font-size: var(--t-sm);
+}
+@media (min-width: 62rem) {
+  .hero__interior {
+    grid-template-columns: 1.6fr 1fr;
+  }
+  .cifras {
+    flex-direction: column;
+    justify-self: end;
+    min-width: 14rem;
+  }
+}
+
+/* ---- ¿Qué es la logística inversa? ---- */
+.que-es__cabecera {
+  margin-left: auto;
+  text-align: right;
+}
+.que-es__cabecera p {
+  margin-left: auto;
+}
+
+.pilares {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  margin-top: 2rem;
+}
+.pilar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radio-m);
+  background: var(--vidrio);
+  border: 1px solid var(--linea);
+  border-top: 4px solid var(--naranja);
+  text-align: center;
+}
+.pilar h3 {
+  margin: 0.5rem 0 0.4rem;
+  color: var(--blanco);
+  font-size: var(--t-lg);
+}
+.pilar p {
+  margin: 0;
+  color: var(--niebla);
+  font-size: var(--t-sm);
+  margin-inline: auto;
+}
+
+.ciclo {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+.ciclo__dibujo {
+  width: min(20rem, 100%);
+  margin-inline: auto;
+  overflow: visible;
+}
+.ciclo__centro {
+  fill: var(--marino-profundo);
+}
+.ciclo__arco {
+  fill: none;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.ciclo--visto .ciclo__arco {
+  animation: trazar 0.9s ease-out forwards;
+}
+.ciclo__numero {
+  opacity: 0;
+}
+.ciclo--visto .ciclo__numero {
+  animation: aparecer 0.4s ease-out forwards;
+}
+.ciclo__numero text {
+  font-weight: 700;
+  font-size: 15px;
+}
+.ciclo__rotulo {
+  fill: var(--niebla);
+  font-weight: 700;
+  font-size: 17px;
+}
+@keyframes trazar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ciclo__arco {
+    stroke-dashoffset: 0;
+  }
+  .ciclo__numero {
+    opacity: 1;
+  }
+}
+.ciclo__pasos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+.ciclo__pasos li {
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 5px solid var(--paso);
+}
+.ciclo__pasos h3 {
+  margin-bottom: 0.15em;
+}
+.ciclo__pasos p {
+  margin: 0;
+  color: var(--niebla);
+}
+@media (min-width: 52rem) {
+  .ciclo {
+    grid-template-columns: 20rem 1fr;
+    gap: 4rem;
+  }
+}
+
+/* ---- Misión y visión (inicio) ---- */
+.mv h2 {
+  margin-bottom: 1.5rem;
+}
+.mv__bloques {
+  display: grid;
+  gap: 2rem;
+}
+.mv__bloques h3 {
+  color: var(--lima);
+}
+.mv__bloques p {
+  margin: 0;
+}
+@media (min-width: 52rem) {
+  .mv__bloques {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  .mv__der {
+    text-align: right;
+  }
+  .mv__der p {
+    margin-left: auto;
+  }
+}
+
+/* ---- Accesos ---- */
+.accesos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.acceso {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 15rem;
+  padding: 1.5rem;
+  border-radius: var(--radio-m);
+  text-decoration: none;
+  overflow: hidden;
+  background:
+    linear-gradient(0deg, rgba(4, 9, 22, 0.95) 15%, rgba(11, 23, 48, 0.45) 100%),
+    var(--foto) center / cover no-repeat;
+  transition: transform 0.25s;
+}
+.acceso:hover {
+  transform: translateY(-4px);
+}
+.acceso::after {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  bottom: 0;
+  width: 3rem;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  background: var(--naranja);
+  transition: width 0.25s;
+}
+.acceso:hover::after {
+  width: calc(100% - 3rem);
+}
+.acceso h3 {
+  margin-bottom: 0.2em;
+}
+.acceso p {
+  margin: 0 0 0.5rem;
+  color: var(--niebla);
+}
+
+.cabecera-fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+.cabecera-fila h2 {
+  margin: 0;
+}
+.enlace-ver {
+  font-weight: 700;
+  color: var(--lima);
+}

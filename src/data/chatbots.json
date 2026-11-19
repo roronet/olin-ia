@@ -1,0 +1,405 @@
+[
+    {
+        "rank":  1,
+        "nombre":  "ChatGPT",
+        "url":  "https://chatgpt.com",
+        "tipologia":  "Asistente conversacional de propósito general (LLM)",
+        "funciones":  [
+                          "Conversación y redacción",
+                          "Deep Research",
+                          "búsqueda web",
+                          "análisis de archivos y datos",
+                          "generación de imágenes",
+                          "GPTs personalizados",
+                          "modo voz"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Go: US$8/mes",
+                      "Plus: US$20/mes",
+                      "Pro: US$200/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  2,
+        "nombre":  "Claude",
+        "url":  "https://claude.ai",
+        "tipologia":  "Asistente conversacional de propósito general (LLM)",
+        "funciones":  [
+                          "Redacción y análisis de textos largos",
+                          "lectura de PDFs y documentos",
+                          "búsqueda web con citas",
+                          "investigación profunda (Research)",
+                          "Proyectos con base de conocimiento",
+                          "Artifacts",
+                          "análisis de datos y código"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Pro: US$20/mes",
+                      "Max: US$100–200/mes",
+                      "Team/Enterprise"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  3,
+        "nombre":  "Gemini",
+        "url":  "https://gemini.google.com",
+        "tipologia":  "Asistente conversacional de propósito general (LLM)",
+        "funciones":  [
+                          "Deep Research",
+                          "integración con Google (Gmail, Drive, Docs)",
+                          "análisis de documentos con contexto muy largo",
+                          "búsqueda en Google",
+                          "generación de imágenes y video"
+                      ],
+        "costo":  [
+                      "Gratis",
+                      "AI Plus: US$4.99/mes",
+                      "AI Pro: ~US$19.99/mes",
+                      "plan superior hasta ~US$199.99/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  4,
+        "nombre":  "Perplexity",
+        "url":  "https://www.perplexity.ai",
+        "tipologia":  "Motor de respuestas / buscador con IA",
+        "funciones":  [
+                          "Respuestas con fuentes citadas en tiempo real",
+                          "modo Academic (fuentes académicas)",
+                          "Deep Research",
+                          "elección de modelos (GPT, Claude, etc.)",
+                          "Spaces para organizar investigación"
+                      ],
+        "costo":  [
+                      "Gratis",
+                      "Pro: desde US$10–20/mes",
+                      "Max: US$200/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  5,
+        "nombre":  "NotebookLM",
+        "url":  "https://notebooklm.google.com",
+        "tipologia":  "Asistente de investigación basado en fuentes propias",
+        "funciones":  [
+                          "Responde solo con base en las fuentes cargadas (PDF, webs, videos)",
+                          "citas a la fuente",
+                          "resúmenes de audio tipo podcast",
+                          "mapas mentales",
+                          "guías de estudio"
+                      ],
+        "costo":  [
+                      "Gratis",
+                      "límites ampliados con Google AI Pro"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  6,
+        "nombre":  "Consensus",
+        "url":  "https://consensus.app",
+        "tipologia":  "Buscador académico con IA",
+        "funciones":  [
+                          "Búsqueda en artículos científicos revisados por pares",
+                          "síntesis de evidencia (Consensus Meter)",
+                          "filtros por tipo de estudio",
+                          "Deep Search"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Pro: US$20/mes",
+                      "Deep: US$65/mes"
+                  ],
+        "idioma":  "Interfaz en inglés; acepta consultas en español"
+    },
+    {
+        "rank":  7,
+        "nombre":  "Elicit",
+        "url":  "https://elicit.com",
+        "tipologia":  "Asistente de investigación académica / revisión de literatura",
+        "funciones":  [
+                          "Búsqueda de papers",
+                          "extracción de datos de artículos en tablas",
+                          "resúmenes",
+                          "apoyo a revisiones sistemáticas",
+                          "generación de reportes"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Pro: US$49/mes",
+                      "Scale: US$169/mes",
+                      "Enterprise"
+                  ],
+        "idioma":  "Principalmente inglés"
+    },
+    {
+        "rank":  8,
+        "nombre":  "SciSpace",
+        "url":  "https://scispace.com",
+        "tipologia":  "Asistente de investigación académica",
+        "funciones":  [
+                          "Chat con PDFs (explica papers)",
+                          "búsqueda de literatura",
+                          "revisión de literatura",
+                          "parafraseo y detector de IA",
+                          "agente de investigación"
+                      ],
+        "costo":  [
+                      "Básico gratuito limitado",
+                      "Premium: US$20/mes (US$12/mes anual)",
+                      "Advanced: US$90/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  9,
+        "nombre":  "Microsoft Copilot",
+        "url":  "https://copilot.microsoft.com",
+        "tipologia":  "Asistente conversacional integrado a productividad",
+        "funciones":  [
+                          "Chat con búsqueda Bing y citas",
+                          "integración con Word, Excel, PowerPoint y Outlook (planes M365)",
+                          "resumen de documentos",
+                          "generación de imágenes"
+                      ],
+        "costo":  [
+                      "Gratis",
+                      "Microsoft 365 Personal: US$9.99/mes",
+                      "M365 Premium: US$19.99/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  10,
+        "nombre":  "Semantic Scholar",
+        "url":  "https://www.semanticscholar.org",
+        "tipologia":  "Buscador académico con IA (Allen Institute for AI)",
+        "funciones":  [
+                          "Más de 200 millones de artículos",
+                          "resúmenes TLDR generados por IA",
+                          "lector semántico con explicaciones",
+                          "alertas y gráficos de citas",
+                          "API abierta"
+                      ],
+        "costo":  [
+                      "Gratis"
+                  ],
+        "idioma":  "Interfaz en inglés"
+    },
+    {
+        "rank":  11,
+        "nombre":  "DeepSeek",
+        "url":  "https://chat.deepseek.com",
+        "tipologia":  "Asistente conversacional de propósito general (LLM, pesos abiertos)",
+        "funciones":  [
+                          "Razonamiento (modo DeepThink)",
+                          "matemáticas y programación",
+                          "lectura de archivos",
+                          "búsqueda web"
+                      ],
+        "costo":  [
+                      "Gratis (chat web/app)",
+                      "API de pago por uso"
+                  ],
+        "idioma":  "Multilingüe (fuerte en chino e inglés; soporta español)"
+    },
+    {
+        "rank":  12,
+        "nombre":  "Scite",
+        "url":  "https://scite.ai",
+        "tipologia":  "Asistente de investigación con análisis de citas",
+        "funciones":  [
+                          "Smart Citations (si un artículo es apoyado o contradicho)",
+                          "asistente que responde con referencias verificables",
+                          "monitoreo de referencias"
+                      ],
+        "costo":  [
+                      "Pago (prueba gratuita)",
+                      "aprox. US$12–20/mes"
+                  ],
+        "idioma":  "Principalmente inglés"
+    },
+    {
+        "rank":  13,
+        "nombre":  "Undermind",
+        "url":  "https://www.undermind.ai",
+        "tipologia":  "Agente de búsqueda académica profunda",
+        "funciones":  [
+                          "Búsqueda exhaustiva de literatura científica mediante agente",
+                          "analiza cientos de artículos y clasifica su relevancia",
+                          "informes con referencias"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Pro: ~US$16–20/mes",
+                      "Team/Enterprise"
+                  ],
+        "idioma":  "Principalmente inglés"
+    },
+    {
+        "rank":  14,
+        "nombre":  "Julius AI",
+        "url":  "https://julius.ai",
+        "tipologia":  "Asistente de análisis de datos con IA",
+        "funciones":  [
+                          "Análisis estadístico de Excel/CSV con lenguaje natural",
+                          "gráficos y visualizaciones",
+                          "regresiones y pruebas",
+                          "genera código Python/R"
+                      ],
+        "costo":  [
+                      "Gratis (15 mensajes/mes)",
+                      "Plus: US$35/mes",
+                      "Pro: US$45/mes por usuario"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  15,
+        "nombre":  "Grok",
+        "url":  "https://grok.com",
+        "tipologia":  "Asistente conversacional de propósito general (LLM)",
+        "funciones":  [
+                          "Búsqueda en tiempo real en web y X (Twitter)",
+                          "DeepSearch",
+                          "razonamiento",
+                          "generación de imágenes"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "SuperGrok Lite: US$10/mes",
+                      "SuperGrok: US$30/mes",
+                      "Heavy: US$300/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  16,
+        "nombre":  "Le Chat (Mistral AI)",
+        "url":  "https://chat.mistral.ai",
+        "tipologia":  "Asistente conversacional de propósito general (LLM europeo)",
+        "funciones":  [
+                          "Búsqueda web con citas",
+                          "Deep Research",
+                          "análisis de documentos (OCR)",
+                          "bibliotecas de documentos",
+                          "generación de imágenes"
+                      ],
+        "costo":  [
+                      "Gratis",
+                      "Pro: US$14.99/mes",
+                      "Estudiante: ~US$5.99/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  17,
+        "nombre":  "Qwen Chat",
+        "url":  "https://chat.qwen.ai",
+        "tipologia":  "Asistente conversacional de propósito general (LLM, pesos abiertos – Alibaba)",
+        "funciones":  [
+                          "Razonamiento",
+                          "búsqueda web",
+                          "Deep Research",
+                          "análisis de documentos e imágenes",
+                          "programación"
+                      ],
+        "costo":  [
+                      "Gratis"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  18,
+        "nombre":  "Kimi",
+        "url":  "https://www.kimi.com",
+        "tipologia":  "Asistente conversacional de propósito general (LLM – Moonshot AI)",
+        "funciones":  [
+                          "Contexto muy largo para leer documentos extensos",
+                          "búsqueda web",
+                          "investigación profunda",
+                          "modo agente",
+                          "programación"
+                      ],
+        "costo":  [
+                      "Gratis",
+                      "planes de pago opcionales con mayor uso"
+                  ],
+        "idioma":  "Multilingüe (fuerte en chino e inglés; soporta español)"
+    },
+    {
+        "rank":  19,
+        "nombre":  "Paperguide",
+        "url":  "https://paperguide.ai",
+        "tipologia":  "Asistente de investigación académica",
+        "funciones":  [
+                          "Búsqueda de papers con respuestas citadas",
+                          "chat con PDFs",
+                          "revisión de literatura",
+                          "gestor de referencias",
+                          "asistente de redacción"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "planes de pago desde ~US$12–20/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  20,
+        "nombre":  "Jenni AI",
+        "url":  "https://jenni.ai",
+        "tipologia":  "Asistente de redacción académica",
+        "funciones":  [
+                          "Autocompletado de textos académicos",
+                          "citas en APA, MLA, etc.",
+                          "chat con PDFs",
+                          "parafraseo",
+                          "búsqueda de fuentes"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Plus: US$12/mes",
+                      "Pro: US$29/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  21,
+        "nombre":  "You.com",
+        "url":  "https://you.com",
+        "tipologia":  "Motor de respuestas / buscador con IA",
+        "funciones":  [
+                          "Búsqueda con citas",
+                          "modo de investigación (ARI)",
+                          "elección de varios modelos",
+                          "agentes personalizados"
+                      ],
+        "costo":  [
+                      "Gratis (limitado)",
+                      "Pro: ~US$20/mes"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    },
+    {
+        "rank":  22,
+        "nombre":  "Meta AI",
+        "url":  "https://www.meta.ai",
+        "tipologia":  "Asistente conversacional de propósito general (LLM – Meta)",
+        "funciones":  [
+                          "Chat integrado en WhatsApp, Instagram y Facebook",
+                          "búsqueda web",
+                          "generación de imágenes"
+                      ],
+        "costo":  [
+                      "Gratis"
+                  ],
+        "idioma":  "Multilingüe (incluye español)"
+    }
+]
