@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import useEscape from '../hooks/useEscape'
+import { useAuth } from '../context/AuthContext'
 
 const principales = [
   { a: '/temas', texto: 'Temas' },
@@ -19,6 +20,7 @@ const menuCompleto = [
 
 export default function Header({ onBuscar }) {
   const [abierto, setAbierto] = useState(false)
+  const { usuario } = useAuth()
   const cerrar = () => setAbierto(false)
   useEscape(cerrar, abierto)
   const contenedor = useRef(null)
@@ -46,6 +48,12 @@ export default function Header({ onBuscar }) {
             </NavLink>
           ))}
         </nav>
+
+        {usuario ? (
+          <Link to="/cuenta" className="cabecera__cuenta">Mi cuenta</Link>
+        ) : (
+          <Link to="/registro" className="cabecera__cuenta">Registrarse</Link>
+        )}
 
         <button type="button" className="cabecera__icono" onClick={onBuscar} aria-label="Buscar en el observatorio">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" aria-hidden="true">
@@ -76,6 +84,14 @@ export default function Header({ onBuscar }) {
                   </NavLink>
                 </li>
               ))}
+              {usuario ? (
+                <li><NavLink to="/cuenta" onClick={cerrar}>Mi cuenta</NavLink></li>
+              ) : (
+                <>
+                  <li><NavLink to="/ingresar" onClick={cerrar}>Ingresar</NavLink></li>
+                  <li><NavLink to="/registro" onClick={cerrar}>Registrarse</NavLink></li>
+                </>
+              )}
             </ul>
           </nav>
         </div>

@@ -1,0 +1,113 @@
+.auth {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 4rem;
+}
+.auth__tarjeta {
+  display: grid;
+  gap: 1rem;
+  padding: 1.75rem;
+  background: var(--superficie);
+  border: 1px solid var(--linea);
+  border-top: 4px solid var(--naranja);
+  border-radius: var(--radio-m);
+  color: var(--blanco);
+}
+.auth__tarjeta h2 {
+  margin: 0;
+}
+.auth__tarjeta p {
+  margin: 0;
+}
+.auth__tarjeta label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+  font-size: var(--t-sm);
+}
+.auth__tarjeta input:not([type='checkbox']) {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--linea);
+  border-radius: var(--radio-s);
+  background: var(--marino);
+  color: var(--blanco);
+  font: inherit;
+}
+.auth__tarjeta input:focus-visible {
+  outline: 2px solid var(--lima);
+  outline-offset: 1px;
+}
+.auth .auth__check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-weight: 500;
+  font-size: var(--t-xs);
+  color: var(--niebla);
+}
+.auth__boton {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--naranja);
+  color: var(--blanco);
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.auth__boton:hover:not(:disabled) {
+  background: var(--naranja-hover);
+}
+.auth__boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.auth__enlace {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--lima);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.auth__error {
+  color: #ff9d8a;
+  font-weight: 600;
+}
+.auth__ok {
+  color: var(--lima);
+  font-weight: 600;
+}
+.auth__pie {
+  font-size: var(--t-xs);
+  color: var(--niebla);
+}
+.auth__pie a {
+  color: var(--lima);
+}
+
+/* Botones de cuenta en la cabecera */
+.cabecera__cuenta {
+  display: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: var(--naranja);
+  color: var(--blanco);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cabecera__cuenta:hover {
+  background: var(--naranja-hover);
+}
+@media (min-width: 62rem) {
+  .cabecera__cuenta {
+    display: inline-block;
+  }
+}

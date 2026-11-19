@@ -8,6 +8,10 @@ import Estudios from './pages/Estudios'
 import Insumos from './pages/Insumos'
 import FuentesDatos from './pages/FuentesDatos'
 import Chatbots from './pages/Chatbots'
+import Registro from './pages/Registro'
+import Ingresar from './pages/Ingresar'
+import VerificarCorreo from './pages/VerificarCorreo'
+import Cuenta from './pages/Cuenta'
 
 export default function App() {
   return (
@@ -21,7 +25,11 @@ export default function App() {
         <Route path="insumos" element={<Insumos />} />
         <Route path="insumos/fuentes-de-datos" element={<FuentesDatos />} />
         <Route path="insumos/chatbots" element={<Chatbots />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="registro" element={<Registro />} />
+        <Route path="ingresar" element={<Ingresar />} />
+        <Route path="verificar-correo" element={<VerificarCorreo />} />
+        <Route path="cuenta" element={<Cuenta />} />
+        <Route path="*"element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   )
